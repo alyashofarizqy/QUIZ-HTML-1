@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+ <title>Formulir Pendaftaran</title>
+
+ <style type="text/css">
+
+body {
+
+    margin: 0;
+
+    padding: 0;
+
+   }
+
+ * {
+
+  box-sizing: border-box;
+
+}
+
+form {
+
+  padding: 1em;
+
+  background: #f9f9f9;
+
+  border: 1px solid #c1c1c1;
+
+  margin-top: 2rem;
+
+  max-width: 800px;
+
+  margin-left: auto;
+
+  margin-right: auto;
+
+  padding: 1em;
+
+}
+
+form input {
+
+  margin-bottom: 1rem;
+
+  background: #fff;
+
+  border: 1px solid #9c9c9c;
+
+}
+
+form button {
+
+  background: lightgrey;
+
+  padding: 0.7em;
+
+  border: 0;
+
+}
+
+form button:hover {
+
+  background: green;
+
+  color: white;
+
+}
+
+form span a{
+
+  background: lightblue;
+
+  padding: 0.7em;
+
+  border: 0;
+
+  text-decoration: none;
+
+  color: black;
+
+  text-align: center;
+
+}
+
+
+form span a:hover {
+
+  background: blue;
+
+  color: white;
+
+}
+
+
+label {
+
+  text-align: right;
+
+  display: block;
+
+  padding: 0.5em 1.5em 0.5em 0;
+
+}
+
+input {
+
+  width: 100%;
+
+  padding: 0.7em;
+
+  margin-bottom: 0.5rem;
+
+}
+
+input:focus {
+
+  outline: 3px solid blue;
+
+}
+
+select {
+
+  width: 100%;
+
+  padding: 0.7em;
+
+  margin-bottom: 0.5rem;
+
+}
+
+select:focus {
+
+  outline: 3px solid green;
+
+}
+
+@media (min-width: 400px) {
+
+  form {
+
+    overflow: hidden;
+
+  }
+
+  label {
+
+    float: left;
+
+    width: 200px;
+
+  }
+
+  input {
+
+    float: left;
+
+    width: calc(100% - 200px);
+
+  }
+
+
+
+    select {
+
+    float: left;
+
+    width: calc(100% - 200px);
+
+  }
+
+
+ </style>
+
+</head>
+
+<body>
+
+ <form action="sukses.php" method="GET">
+
+  <h1 align="center">Formulir Pendaftaran</h1>
+
+        <p align="center"><a>Pekan Olahraga dan Seni Guru TKA/TPA</a></p>
+        <p align="center"><a>Tahun 2020</a></p>
+        <label>NAMA PESERTA</label>
+
+        <input name="nama_lengkap" type="text">
+
+        <label>TANGGAL LAHIR</label>
+
+        <input name="tempat_lahir" type="text">
+
+        <label>URUSAN UNIT</label>
+
+        <input name="urusan_unit" type="text">
+
+        <label>KELURAHAN/DESA</label>
+
+        <input name="kelurahan" type="text">
+
+        <label>KECAMATAN</label>
+
+        <input name="kecamatan" type="text">
+
+        <label>NOMOR TELEPON</label>
+
+        <input name="notelp" type="text">
+
+        <label>JENIS LOMBA</label>
+        <select name="jenis_lomba">
+
+        <option value="1">1. Tarik tambang (4 Perempuan + 1 Laki = 5 Orang)</option>
+        <option value="2">2. Lari Estafet (4 Perempuan)</option>
+        <option value="3">3. Gobak Sodor (4 Perempuan)</option>
+        <option value="4">4. Tartil (1 Orang perwakilan TKA/TPA)</option>
+        <option value="5">5. Ceramah (1 Orang perwakilan TKA/TPA)</option>
+
+        </select>
+
+    <p align="left"><i>Ket: Lingkari jenis lomba yang dipilih</i></p>
+    <p align="right"><a>Sangatta, ................</a></p>
+    <tr><td><p>Kepala Unit TKA/TPA</p></td>
+    <td><p align="right">Peserta Lomba</p></td>
+    </tr>
+
+    <tr><td><p>----------------------------</p></td>
+    <td><p align="right">----------------------------</p></td>
+    </tr>
+
+ </form>
+
+</body>
+</html>
